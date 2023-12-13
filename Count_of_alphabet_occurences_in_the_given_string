@@ -1,6 +1,15 @@
 N= int(input())
-string_dict = {}
+string_list = []
 for i in range(0,N):
     input_string = input()
-    string_dict.update(input_string)
-print(string_dict)
+    string_list.append(input_string)
+print(string_list)
+
+for strng in string_list:
+    string_dict={}
+    for alpha in strng:
+        if alpha not in string_dict:
+            string_dict[alpha]=1
+        else:
+            string_dict[alpha]+=1
+    print(string_dict)
