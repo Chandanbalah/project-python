@@ -1,0 +1,6 @@
+N= int(input())
+string_dict = {}
+for i in range(0,N):
+    input_string = input()
+    string_dict.update(input_string)
+print(string_dict)
