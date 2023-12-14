@@ -10,7 +10,7 @@ def process_data(data):
         return 'Value for C'
     else:
         return 'Default Value'
-data = str(input()).upper()
+data = input().upper()
 func = process_data(data)
 
 # restructured code
