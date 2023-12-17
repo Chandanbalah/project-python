@@ -1,0 +1,25 @@
+# Restructuring the given piece of code
+
+# Code before optimisation
+def process_data(data):
+    if data == 'A':
+        return 'Value for A'
+    elif data == 'B':
+        return 'Value for B'
+    elif data == 'C':
+        return 'Value for C'
+    else:
+        return 'Default Value'
+data = input().upper()
+func = process_data(data)
+
+# restructured code
+
+from collections import defaultdict
+def process_data(data):
+    dictionary={'A': 'Value for A', 'B': 'Value for B', 'C': 'Value for C'}
+    dictionary=defaultdict(lambda: 'Default Value')
+    print(dictionary[data])
+
+var = input()
+process_data(var)
